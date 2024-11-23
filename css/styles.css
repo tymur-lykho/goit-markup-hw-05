@@ -734,7 +734,7 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus > .input-icon {
+.input:focus-within + .input-icon {
   fill: #4d5ae5;
 }
 
@@ -748,7 +748,7 @@ button {
   height: 120px;
 
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -788,20 +788,6 @@ input[type="checkbox"]:focus-visible + .agreement-wrapper > .custom-checkbox {
   outline: 2px solid #252525;
   outline-offset: 1px;
 }
-
-/* .checkbox-icon {
-  fill: #f4f4fd;
-  opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: opacity;
-}
-
-input[type="checkbox"]:checked
-  + .agreement-wrapper
-  > .custom-checkbox
-  > .checkbox-icon {
-  opacity: 1;
-} */
 
 .policy-link {
   line-height: 1.33;
